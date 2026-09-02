@@ -20,7 +20,7 @@ spec:
         - name: playground
           # This tag is the only thing that changes to roll the app forward.
           # Argo CD sees the commit and reconciles the cluster to match.
-          image: wil42/playground:v2
+          image: wil42/playground:v1
           ports:
             - containerPort: 8888
           readinessProbe:
